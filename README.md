@@ -10,7 +10,7 @@
 
 The application enforces a strict N-Tier architecture to ensure modularity, separating the database models from the client payloads.
 
-![Architecture Layers](img/Layers.png)
+![Architecture Layers](images/Layers.png)
 
 1. **Presentation Layer (Controllers/REST):** Exposes standard HTTP endpoints (`/player`, `/move`, `/yakadex`). Uses strict Data Transfer Objects (DTOs) for incoming requests and outgoing responses.
 2. **Business Logic Layer (Services):** The core game engine. It calculates encounter probabilities, manages capture mechanics, and validates complex state-driven rules.
@@ -33,7 +33,7 @@ To prevent clients from spamming actions (e.g., moving too fast or infinitely ga
 
 The API endpoints are fully documented, strictly typed, and interactive via Swagger UI/OpenAPI.
 
-![Swagger API](img/API.png)
+![Swagger API](images/API.png)
 
 ## 🛠️ Technical Stack
 * **Language/Framework:** Java, Quarkus
